@@ -1,0 +1,13 @@
+[
+  "tests/test_pipeline.py::TestEstimators::test_independent_oscillators_low",
+  "tests/test_pipeline.py::TestEstimators::test_phase_lagged_detected_by_all",
+  "tests/test_pipeline.py::TestEstimators::test_zero_lag_suppressed_by_wpli",
+  "tests/test_pipeline.py::TestPipelineIntegration::test_pipeline_detects_phase_lagged_only",
+  "tests/test_pipeline.py::TestStats::test_bh_fdr_monotonic_and_bounded",
+  "tests/test_pipeline.py::TestStats::test_max_stat_threshold",
+  "tests/test_pipeline.py::TestStats::test_pvalue_bounds",
+  "tests/test_pipeline.py::TestSurrogates::test_circular_shift_preserves_value_set_per_channel",
+  "tests/test_pipeline.py::TestSurrogates::test_phase_randomization_preserves_amplitude_spectrum",
+  "tests/test_pipeline.py::TestSurrogates::test_phase_randomization_real_output",
+  "tests/test_pipeline.py::TestSurrogates::test_trial_shuffle_preserves_marginals"
+]

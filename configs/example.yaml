@@ -1,0 +1,14 @@
+# Example wPLI validation configuration.
+method: wpli
+mode: multitaper
+mt_bandwidth: 4.0
+bands:
+  - { name: theta, fmin: 4.0, fmax: 8.0 }
+  - { name: alpha, fmin: 8.0, fmax: 13.0 }
+  - { name: beta,  fmin: 13.0, fmax: 30.0 }
+surrogate: trial_shuffle
+n_permutations: 200
+alpha: 0.05
+fdr_q: 0.05
+n_jobs: 1
+random_seed: 0

@@ -4,18 +4,29 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "wpli_pipeline"
-version = "0.0.3"
-description = "wPLI phase-connectivity pipeline (work in progress)."
+version = "0.1.0"
+description = "wPLI / dwPLI phase-connectivity pipeline with permutation and surrogate controls (MNE-Python)."
 authors = [{ name = "Anna" }]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "mne>=1.7",
+    "mne-connectivity>=0.6",
     "numpy>=1.24",
     "scipy>=1.10",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "pyyaml>=6.0",
+    "joblib>=1.3",
+    "tqdm>=4.66",
+    "statsmodels>=0.14",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=7"]
+dev = ["pytest>=7", "ruff", "black"]
+
+[project.scripts]
+wpli-run = "wpli_pipeline.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
