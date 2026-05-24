@@ -1,6 +1,14 @@
 # wPLI Validation Pipeline
 
-A small MNE-Python pipeline for **weighted Phase Lag Index (wPLI)**
-connectivity with **permutation-based statistical controls**.
+Weighted Phase Lag Index (wPLI) connectivity pipeline with permutation
+and surrogate controls.
 
-Work in progress.
+## Install (dev)
+
+```bash
+pip install -e .
+```
+
+## Status
+
+Bootstrapping. See `src/wpli_pipeline/`.
