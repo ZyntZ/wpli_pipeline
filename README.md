@@ -3,11 +3,14 @@
 Weighted Phase Lag Index (wPLI) connectivity pipeline with permutation
 and surrogate controls.
 
-## What's implemented so far
+## Implemented
 
-- Reference estimators (`plv`, `pli`, `wpli`, `dwpli`) from a complex
-  cross-spectrum. Definitions follow Lachaux et al. (1999), Stam et al.
-  (2007), and Vinck et al. (2011).
+- Reference connectivity estimators (`plv`, `pli`, `wpli`, `dwpli`).
+- Surrogate / null generators:
+  - `trial_shuffle` — permute epochs per channel (across-epoch null).
+  - `circular_time_shift` — circular shift per (epoch, channel).
+  - `phase_randomization` — Fourier amplitude-preserving surrogate
+    (Theiler et al., 1992).
 
 ## Install (dev)
 
