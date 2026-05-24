@@ -8,11 +8,11 @@ and surrogate controls.
 - Reference connectivity estimators (`plv`, `pli`, `wpli`, `dwpli`).
 - Surrogate / null generators (`trial_shuffle`, `circular_time_shift`,
   `phase_randomization`).
-- Multiple-comparison correction:
-  - One-sided permutation p-values with the +1 / +1 correction
-    (Phipson & Smyth, 2010).
-  - Benjamini-Hochberg FDR (Benjamini & Hochberg, 1995).
-  - Max-statistic permutation FWER (Nichols & Holmes, 2002).
+- Multiple-comparison correction: permutation p-values, BH-FDR,
+  max-statistic FWER.
+- Ground-truth EEG-like simulators (`simulate_coupled_pair`,
+  `simulate_eeg_like`, `add_volume_conduction`) for unit testing and
+  method validation.
 
 ## Install (dev)
 
